@@ -4,6 +4,7 @@ import './App.css';
 import WelcomeComponent from './components/WelcomeComponent';
 import Clock from './components/Clock';
 import Counter from './components/Counter';
+import TapCounter from './components/TapCounter';
 
 class App extends React.Component {
 
@@ -20,12 +21,15 @@ class App extends React.Component {
               <p className="App-intro">
               To get started, edit <code>src/App.js</code> and save to reloads.
             </p>
-
               <li>
                   <WelcomeComponent message="Test 1"/>
                   <WelcomeComponent message="Test 2"/>
                   <WelcomeComponent message="Test 3"/>
               </li>
+
+              <div>
+                  <TapCounter/>
+              </div>
           </div>
     );
   }
