@@ -10,11 +10,7 @@ class WelcomeComponent extends Component {
 
     render() {
         return (
-            <div className="WelcomeComponent">
-                <div className="App-header">
-                    <h2>Welcome {this.props.message}</h2>
-                </div>
-            </div>
+            <h2>Message: {this.props.message}</h2>
         );
     }
 }

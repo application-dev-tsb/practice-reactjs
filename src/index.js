@@ -1,14 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import App from './App';
-import WelcomeComponent from './components/WelcomeComponent'
+import App from './App';
+
 import './index.css';
 
 /**
  * Rendering elements
  * https://facebook.github.io/react/docs/rendering-elements.html
  */
-ReactDOM.render(
-    <WelcomeComponent message="Test"/>,
-    document.getElementById('root')
-);
+function renderApp() {
+    ReactDOM.render(
+        <App />,
+        document.getElementById('root')
+    );
+}
+
+renderApp();
+setInterval(renderApp, 1000);

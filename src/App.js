@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import WelcomeComponent from './components/WelcomeComponent'
 
 class App extends Component {
 
@@ -17,6 +18,12 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reloads.
         </p>
+
+          <li>
+              <WelcomeComponent message="Test 1"/>
+              <WelcomeComponent message="Test 2"/>
+              <WelcomeComponent message="Test 3"/>
+          </li>
       </div>
     );
   }
