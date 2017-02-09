@@ -13,17 +13,24 @@ class TapCounter extends React.Component {
     }
 
     tap = () => {
-        console.log('count:', this.state.count);
-        this.setState(old =>
-            ({count: old.count + 1})
-        );
+        this.setState(old => ({count: old.count + 1}) );
     }
 
     render() {
+
+        let cheer = null;
+        if (this.state.count < 10) {
+            cheer = <div>Less than 10</div>
+        } else {
+            cheer = <div>More than 10!!!!</div>
+        }
+
         return(
             <div>
                 <button onClick={this.tap}>Tap Me</button>
                 <div>Count: {this.state.count}</div>
+                {cheer}
+                {this.state.count>10 ? <span>true</span> : <span>false</span>}
             </div>
         );
     }
