@@ -2,6 +2,7 @@
  * Created by KWL on 2/9/2017.
  */
 import React from 'react';
+import Printer from './Printer';
 
 class Counter extends React.Component {
 
@@ -18,7 +19,10 @@ class Counter extends React.Component {
 
     render() {
         return(
+            <div>
             <div>Current Count: {this.state.count}</div>
+            <div>Child: <Printer line={this.state.count}/></div>
+            </div>
         );
     }
 
