@@ -5,6 +5,7 @@ import WelcomeComponent from './components/WelcomeComponent';
 import Clock from './components/Clock';
 import Counter from './components/Counter';
 import TapCounter from './components/TapCounter';
+import EnhancedList from './components/EnhancedList';
 
 class App extends React.Component {
 
@@ -30,6 +31,8 @@ class App extends React.Component {
               <div>
                   <TapCounter/>
               </div>
+
+              <EnhancedList/>
           </div>
     );
   }
